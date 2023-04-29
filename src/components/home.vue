@@ -40,17 +40,19 @@
                 <h6>
                     Ofertas exclusivas en tu email
                 </h6>
-                <p>
+                <h7>
                     Recibí de primera mano nuestras ofertas y beneficios exclusivos.
-                </p>
+                </h7>
     
             </div>
-    
-            <form>
+            <div class="form">
+                <form>
                 
-                <br><input type="text" id="mail" name="mail" placeholder="ingresa tu emal" ><br>   
-                <button>!Quiero recibirlas¡</button> 
-            </form>
+                    <br><input type="text" id="mail" name="mail" placeholder="ingresa tu emal" ><br>   
+                    <button>!Quiero recibirlas¡</button> 
+                </form>
+            </div>
+            
         </div>
         
         
@@ -75,6 +77,7 @@ methods:{}}
         margin:0px;
         
     }
+
     a{
     
         text-decoration: none;
@@ -233,16 +236,38 @@ methods:{}}
         
         
     }
+div .ofertas{
+    display: flex;
+    width: 93%;
+    height: 430px;
+}
+div.ofertas a{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 08;
+    transition: .5s ease;
     
-    .ofertas .h7,.h8,.h9,.h10,.h11{
-        border: 0.5px solid rgba(218, 144, 33, 0.719);
-        color: rgb(255, 255, 255);
-        margin: 0px 10px 10px 10px;
-        padding:auto;
-        padding: 300px 120px 20px 20px;
-        font-size: 25px;
+}
+div.ofertas a:hover{
+    cursor: crosshair;
+    width: 200px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+    
+.ofertas .h7,.h8,.h9,.h10,.h11{
+    border: 0.5px solid rgba(218, 144, 33, 0.719);
+    height: 430px;
+    font-size: 25px;
+     
         
-    }
+}
+.ofertas .h7 text{
+    border: 0.5px solid rgba(218, 144, 33, 0.719);
+    
+        
+}
     .ofertas .h7{
         background-image: url(@/assets/san\ andres.jpg);
         background-size: 100% 100%;
@@ -254,45 +279,46 @@ methods:{}}
     .ofertas .h9{
         background-image: url(@/assets/CIUDAD\ DE\ MEXICO2.jpg);
         background-size:100% 100% ;
-        font-size: 25px;
     }
     .ofertas .h10{
         background-image: url(@/assets/miami.jpeg);
         background-size:100% 100% ;
-        padding: 325px 120px 20px 20px;
     }
     .ofertas .h11{
         background-image: url(@/assets/cali.png);
         background-size:100% 100% ;
-        padding: 325px 120px 20px 20px;
     }
+
+ /* ofertassssssssssssss */ 
+
     .OfertasExclusivas{
-        
-        display:flex;
-        
-        align-items: center;
+        display:flex;   
+        place-items: top;
         background-color: rgb(223, 218, 211);
     }
     .OfertasExclusivas img{
-        margin: 50px ;
-        height: 120px;
+        margin: 80px ;
+        height: 10px;
     }
     .OfertasExclusivas .text{
-        margin: 50px ;
-        height: 120px;
-        font-size: 20px;
+        margin: 10;
+        height: 10px;
+        display: grid;
         font-family:Arial;
     }
     .OfertasExclusivas .text h6{
-        margin: 0px 0px -80px 0px ;
-        height: 120px;
+        height: 2px;
         font-size: 25px;
-        font-family:Arial;
     }
-    .OfertasExclusivas  form {
-        display:flex;
-        align-items: center;
-        margin: 0px 50px 0px 0px;
+    .OfertasExclusivas .text h7{
+        height: 2px;
+        font-size: 22px;
+    }
+
+    .OfertasExclusivas .form {
+        display:grid;
+        text-align: center;
+        margin: 20px 20px 20px 40px;
     }
     .OfertasExclusivas  form button{
         margin: 0px 20px 20px 10px;
@@ -308,8 +334,7 @@ methods:{}}
         color: rgb(108, 108, 108);
     }
     .OfertasExclusivas form input{
-        
-        margin: 0px 60px 20px 20px;
+        margin: 0px 20px 20px 20px;
         padding: 10px 50px 20px 50px;
         font-size: 20px;
         font-family:Arial;
