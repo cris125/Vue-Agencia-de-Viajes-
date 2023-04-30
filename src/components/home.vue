@@ -13,17 +13,17 @@
             <a href="" class="nav-link">Buscar</a>
         </div>
         </div>
-        <h4>Top lugares mas buscados hoy </h4>
+        <h2 class="TopLug">Top lugares mas buscados hoy </h2>
         <div class="top">
-            <a href="" class="h5">Cartagena de indias</a>
-            <a href="" class="h6">Paris Francia</a>
+            <a href="" class="h5"><strong>Cartagena de indias</strong></a>
+            <a href="" class="h6"><strong>Paris Francia</strong></a>
             <div class="mas_opciones">
-                <a href="" class="h7">Cancún mexico</a>
-                <a href="" class="m-opciones">Mas lugares</a>
+                <a href="" class="h7"><strong>Cancún mexico</strong></a>
+                <a href="" class="m-opciones"><strong>Mas lugares</strong></a>
             </div>
         </div>
-        <h5>Ofertas que no pueden esperar</h5>
-        <div class="ofertas">
+        <h2 class="OfertasQ">Ofertas que no pueden esperar</h2>
+        <section class="ofertas">
             
             <a href="" class="h7">San Andres</a>
             <a href="" class="h8">Santa Marta</a>
@@ -32,17 +32,17 @@
             <a href="" class="h11">Cali</a>
             
             
-        </div>
+        </section>
         
         <div class="OfertasExclusivas">
             <img src="imagenes/mail.png" alt="">
             <div class="text">
-                <h6>
+                <h3>
                     Ofertas exclusivas en tu email
-                </h6>
-                <h7>
+                </h3>
+                <h4>
                     Recibí de primera mano nuestras ofertas y beneficios exclusivos.
-                </h7>
+                </h4>
     
             </div>
             <div class="form">
@@ -73,175 +73,161 @@ components: {
 methods:{}}
 </script>
 <style>
-    body{
-        margin:0px;
-        
-    }
+body{margin:0px;}
 
-    a{
-    
-        text-decoration: none;
-        color:white;   
+a{
+    text-decoration: none;
+    color:white;   
     }
-    .fondo{
-        background-image:url(@/assets/fondo.png);
-        padding: 0px 0px 70px 0px;
+.fondo{
+     background-image:url(@/assets/fondo.png);
+    padding: 0px 0px 70px 0px;
     }
-    nav button{
-        color: #ffffff;
-        border: none;
-        background: none;
-        font-family:Tahoma;
-        font-size: 15px;
-        font-weight: 300;
-        padding-left: 10px;
-        margin-right: 10px;
-
-    }
-    nav button.xd{
+nav button{
+    color: #ffffff;
+    border: none;
+    background: none;
+    font-family:Tahoma;
+    font-size: 15px;
+    font-weight: 300;
+    padding-left: 10px;
+    margin-right: 10px;
+}
+nav button.xd{
         color: rgb(41, 112, 78);
-        
         font-size: 15px;
         text-align: center;
         border-radius: 5px;
         margin: 10px 10px 0px 10px;   
     }
-    nav button:hover{
+nav button:hover{
         color: rgb(199, 199, 202);
     }
-    header a{
-        display: flex;
-        justify-content: space-between;
-        background-color: hsla(0, 0%, 0%, 0.733);
-        color: aliceblue;
-        align-items: center;
-        padding: 20px;
+header a{
+    display: flex;
+    justify-content: space-between;
+    background-color: hsla(0, 0%, 0%, 0.733);
+    color: aliceblue;
+    align-items: center;
+    padding: 20px;
         
     }
-    .logo{
-        margin-left: 40px;
-        display: flex;
-        align-items: center;
+.logo{
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
     }
+.logo img{
+    margin: 2px ;
+    height: 35px;
+    }
+h1{
+    font-family:'Lucida Sans Unicode';
+    color: #ffffff;
+    font-size: 80px;
+    display: flex;
+    text-align: center;
+    margin: -10px 10px -10px 210px; 
+    }
+.buscador{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    border-radius: 60px;
+    margin: 0px 200px 10px 200px;
+    padding: 5px 20px 10px 50px;
+    background-color: #ffffff;
+        
+    }
+input{
+    text-align: center;
+    font-size: 30px;
+    margin: 0px 0px 20px 0px;
+    padding: 0px auto 0px auto; 
+    }
+
     
-    .logo img{
-        margin: 2px ;
-        height: 35px;
+.buscador a{
+    font-size: 20px;
+    color: #ffffff;
+    border-radius: 60px;
+    margin:0px 0px 0px 0px;
+    padding: 5px 70px 5px 70px;
+    background-color: #41973e;
     }
-    h1{
-        
-        font-family:'Lucida Sans Unicode';
-        color: #ffffff;
-        font-size: 80px;
-        display: flex;
-        text-align: center;
-        margin: -10px 10px -10px 210px; 
+
+.buscador a:hover{
+    color: rgb(64, 64, 65);
+    background-color: #3b7d39;
     }
-    .buscador{
-        display: flex;
-        justify-content: space-between;
-        text-align: center;
-        align-items: center;
-        border-radius: 60px;
-        margin: 0px 200px 50px 200px;
-        padding: 5px 20px 10px 50px;
-        background-color: #ffffff;
-        
+h2.TopLug{
+    font-family:Arial;
+    font-size: 40px;
+    margin: 16px 25px 13px 60px;
     }
-    
-    input{
-        text-align: center;
-        align-items: center;
-        font-size: 30px;
-        margin: 0px 0px 20px 0px;
-        padding: 0px auto 0px auto;
-        
+.top{
+    font-family:Arial;
+    display: flex;
+    justify-content: space-between;
     }
-    
-    .buscador a{
-        font-size: 20px;
-        color: #ffffff;
-        border-radius: 60px;
-        margin:0px 0px 0px 0px;
-        padding: 5px 70px 5px 70px;
-        background-color: #41973e;
+.top .h5{
+    font-size: 30px;
+    margin: 50px 10px 25px 50px;
+    padding: 20px 150px 400px 10px;
+    background-image: url(@/assets/cartagena.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat; 
     }
-    .buscador a:hover{
-        color: rgb(64, 64, 65);
+.top .h6{   
+    font-size: 30px;
+    margin: 50px 10px 20px 10px;
+    padding: 20px 180px 400px 10px;
+    background-image: url(@/assets/francia.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat; 
     }
-    h4{
-        font-family:Arial;
-        font-size: 30px;
-        margin: 80px 0px 0px 60px;
+.top .mas_opciones{
+    display:flex;
+    flex-direction: column;
     }
-    .top{
-        
-        font-family:Arial;
-        color: #ffffff;
-        display: flex;
-        justify-content: space-between;
-        
-        
-        
-        
+.top .mas_opciones .h7{   
+    font-size: 30px;
+    margin: 50px 60px 20px 10px;
+    padding: 20px 220px 370px 10px;
+    background-image: url(@/assets/cancun.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat; 
+}
+.top .mas_opciones .m-opciones{   
+    font-size: 30px;
+    margin: 0px 60px 20px 10px;
+    padding: 20px 20px 75px 10px;
+    background-color: rgb(219, 143, 0);  
     }
-    .top .h5{
-        font-size: 30px;
-        
-        margin: 50px 10px 25px 50px;
-        padding: 20px 150px 400px 10px;
-        background-image: url(@/assets/cartagena.jpg);
-        background-size: 100% 100% ;
-        
-    }
-    .top .h6{
-        
-        font-size: 30px;
-        margin: 50px 10px 20px 10px;
-        padding: 20px 180px 400px 10px;
-        background-image: url(@/assets/francia.jpg);
-        background-size: 100% 100% ;
-    }
-    .top .mas_opciones{
-        display:flex;
-        flex-direction: column;
-    }
-    .top .mas_opciones .h7{
-        
-        font-size: 30px;
-        margin: 50px 60px 20px 10px;
-        padding: 20px 220px 370px 10px;
-        background-image: url(@/assets/cancun.jpg);
-        background-size: 100% 100% ;}
-    .top .mas_opciones .m-opciones{
-        
-        font-size: 30px;
-        margin: 0px 60px 20px 10px;
-        padding: 20px 20px 75px 10px;
-        background-color: rgb(219, 143, 0);
-        
-    }
-    h5{
-        font-family:Arial;
-         font-size: 30px;
-         margin: 20px 0px 0px 60px;
+h2.OfertasQ{
+    font-family:Arial;
+    font-size: 30px;
+    margin: 20px 0px 0px 50px;
+    color: black;
      }
-    .ofertas {
-        justify-content: space-between;
-        display:flex;
-        text-align: center;
-        align-items: center;
-        font-family:Arial;
-        margin: 25px 50px 80px 40px;
-        
-        
+.ofertas {
+    justify-content: space-between;
+    display:flex;
+    text-align: center;
+    align-items: center;
+    font-family:Arial;
+    margin: 25px 50px 80px 40px; 
     }
-div .ofertas{
+section.ofertas{
     display: flex;
     width: 93%;
     height: 430px;
 }
-div.ofertas a{
+section.ofertas a{
     width: 0px;
     flex-grow: 1;
     object-fit: cover;
@@ -249,10 +235,10 @@ div.ofertas a{
     transition: .5s ease;
     
 }
-div.ofertas a:hover{
+section.ofertas a:hover{
     cursor: crosshair;
     width: 200px;
-    opacity: 1;
+    opacity: 50;
     filter: contrast(120%);
 }
     
@@ -260,8 +246,6 @@ div.ofertas a:hover{
     border: 0.5px solid rgba(218, 144, 33, 0.719);
     height: 430px;
     font-size: 25px;
-     
-        
 }
 .ofertas .h7 text{
     border: 0.5px solid rgba(218, 144, 33, 0.719);
@@ -270,23 +254,33 @@ div.ofertas a:hover{
 }
     .ofertas .h7{
         background-image: url(@/assets/san\ andres.jpg);
-        background-size: 100% 100%;
+        background-size: cover;
+        background-position:right;
+        background-repeat: no-repeat;
     }
     .ofertas .h8{
         background-image: url(@/assets/santamarta.jpg);
-        background-size: 100% 100% ;
+        background-size: cover;
+        background-position:center;
+        background-repeat: no-repeat;
     }
     .ofertas .h9{
         background-image: url(@/assets/CIUDAD\ DE\ MEXICO2.jpg);
-        background-size:100% 100% ;
+        background-size: cover;
+        background-position:center;
+        background-repeat: no-repeat;
     }
     .ofertas .h10{
         background-image: url(@/assets/miami.jpeg);
-        background-size:100% 100% ;
+        background-size: cover;
+        background-position:center;
+        background-repeat: no-repeat;
     }
     .ofertas .h11{
         background-image: url(@/assets/cali.png);
-        background-size:100% 100% ;
+        background-size: cover;
+        background-position:center;
+        background-repeat: no-repeat;
     }
 
  /* ofertassssssssssssss */ 
@@ -306,11 +300,12 @@ div.ofertas a:hover{
         display: grid;
         font-family:Arial;
     }
-    .OfertasExclusivas .text h6{
+    .OfertasExclusivas .text h3{
         height: 2px;
         font-size: 25px;
+        color: green;
     }
-    .OfertasExclusivas .text h7{
+    .OfertasExclusivas .text h4{
         height: 2px;
         font-size: 22px;
     }
